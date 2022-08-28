@@ -36,9 +36,9 @@
   },
   "license": "Apache 2.0",
   "dependencies": {
-    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy": "^1.0.2",
     "@11ty/eleventy-cache-assets": "^2.0.3",
-    "@11ty/eleventy-plugin-rss": "^1.0.9",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@lhci/cli": "^0.7.2",
     "@rollup/plugin-node-resolve": "^8.4.0",
     "algoliasearch": "^4.6.0",
