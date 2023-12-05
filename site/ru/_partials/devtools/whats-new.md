@@ -3,40 +3,93 @@
 Чтобы увидеть полный список обновлений,  перейдите на английскую версию по ссылке 
 <a href="/tags/new-in-devtools/" translate="no">What's New In DevTools</a>. Ниже перечислены материалы, переведенные на русский язык.
 
-<!-- $content -->
+{# $content #}
 
-<!-- ### Chrome 108 {: #chrome108 }
+{# ### Chrome 112 {: #chrome112 }
 
-* [Hints for inactive CSS properties](/ru/blog/new-in-devtools-108/#css-hint)
-* [Auto-detect XPath and text selectors in the Recorder panel](/ru/blog/new-in-devtools-108/#recorder)
-* [Step through comma-separated expressions](/ru/blog/new-in-devtools-108/#debugging)
-* [Improved Ignore list setting](/ru/blog/new-in-devtools-108/#ignore-list)
-* [Miscellaneous highlights](/ru/blog/new-in-devtools-108/#misc)
- -->
+* [Recorder updates](/ru/blog/new-in-devtools-112/#recorder)
+* [Recorder replay extensions](/ru/blog/new-in-devtools-112/#replay-extensions)
+* [Record with pierce selectors](/ru/blog/new-in-devtools-112/#pierce-selectors)
+* [Export recordings as Puppeteer scripts with Lighthouse analysis](/ru/blog/new-in-devtools-112/#puppeteer-lighthouse)
+* [Get extensions](/ru/blog/new-in-devtools-112/#get-extensions)
+* [Elements > Styles updates](/ru/blog/new-in-devtools-112/#elements-styles)
+* [CSS documentation in the Styles pane](/ru/blog/new-in-devtools-112/#css)
+* [CSS nesting support](/ru/blog/new-in-devtools-112/#nesting)
+* [Marking logpoints and conditional breakpoints in the Console](/ru/blog/new-in-devtools-112/#logpoint)
+* [Ignore irrelevant scripts during debugging](/ru/blog/new-in-devtools-112/#ignore-list)
+* [JavaScript Profiler deprecation started](/ru/blog/new-in-devtools-112/#js-profiler-deprecation)
+* [Emulate reduced contrast](/ru/blog/new-in-devtools-112/#reduced-contrast)
+* [Lighthouse 10](/ru/blog/new-in-devtools-112/#lighthouse)
+* [Miscellaneous highlights](/ru/blog/new-in-devtools-112/#misc)
+ #}
 
-<!-- ### Chrome 107 {: #chrome107 }
+{# ### Chrome 111 {: #chrome111 }
 
-* [Customize keyboard shortcuts in DevTools](/ru/blog/new-in-devtools-107/#shortcuts)
-* [Toggle light and dark themes with keyboard shortcut](/ru/blog/new-in-devtools-107/#toggle-themes)
-* [Highlight C/C++ objects in the Memory Inspector](/ru/blog/new-in-devtools-107/#memory)
-* [Support full initiator information for HAR import](/ru/blog/new-in-devtools-107/#har)
-* [Start DOM search after pressing `Enter`](/ru/blog/new-in-devtools-107/#search-type)
-* [Display `start` and `end` icons for `align-content` CSS flexbox properties](/ru/blog/new-in-devtools-107/#flexbox)
-* [Miscellaneous highlights](/ru/blog/new-in-devtools-107/#misc)
- -->
+* [Debugging HD color with the Styles pane](/ru/blog/new-in-devtools-111/#color)
+* [Enhanced breakpoint UX](/ru/blog/new-in-devtools-111/#breakpoint-redesign)
+* [Customizable Recorder shortcuts](/ru/blog/new-in-devtools-111/#recorder)
+* [Better syntax highlight for Angular](/ru/blog/new-in-devtools-111/#syntax)
+* [Reorganize caches in the Application panel](/ru/blog/new-in-devtools-111/#cache)
+* [Miscellaneous highlights](/ru/blog/new-in-devtools-111/#misc)
+ #}
 
-<!-- ### Chrome 106 {: #chrome106 }
 
-* [Group files by Authored / Deployed in the Sources panel](/ru/blog/new-in-devtools-106/#authored)
-* [Linked stack traces for asynchronous operations](/ru/blog/new-in-devtools-106/#async)
-* [Automatically ignore known third-party scripts](/ru/blog/new-in-devtools-106/#auto-ignore)
-* [Improved call stack during debugging](/ru/blog/new-in-devtools-106/#call-stack)
-* [Hiding ignore-listed sources in the Sources panel](/ru/blog/new-in-devtools-106/#ignore-nav)
-* [Hiding ignore-listed files in the Command Menu](/ru/blog/new-in-devtools-106/#ignore-search)
-* [New Interactions track in the Performance panel](/ru/blog/new-in-devtools-106/#performance)
-* [LCP timings breakdown in the Performance Insights panel](/ru/blog/new-in-devtools-106/#insights)
-* [Auto-generate default name for recordings in the Recorder panel](/ru/blog/new-in-devtools-106/#recorder)
-* [Miscellaneous highlights](/ru/blog/new-in-devtools-106/#misc) -->
+### Chrome 110 {: #chrome110 }
+
+* [Очистка вкладки Производительность при перезагрузке](/ru/blog/new-in-devtools-110/#perf)
+* [Обновления Регистратора (Recorder)](/ru/blog/new-in-devtools-110/#recorder)
+* [Просмотр и подсветка кода в пользовательском сценарии в Регистраторе](/ru/blog/new-in-devtools-110/#recorder-code)
+* [Настройка типов селекторов записи](/ru/blog/new-in-devtools-110/#recorder-selector)
+* [Редактирование пользовательского сценария во время записи](/ru/blog/new-in-devtools-110/#recorder-edit)
+* [Автоматическое красивое форматирование внутри файла](/ru/blog/new-in-devtools-110/#pretty-print)
+* [Улучшенная подсветка синтаксиса и встроенный предварительный просмотр для Vue, SCSS и других](/ru/blog/new-in-devtools-110/#highlight)
+* [Эргономичное и единообразное автодополнения в Консоли (Console)](/ru/blog/new-in-devtools-110/#console)
+* [Другие важные моменты](/ru/blog/new-in-devtools-110/#misc)
+
+
+### Chrome 109 {: #chrome109 }
+
+* [Recorder: опции копирования для шага, воспроизведение на странице, контекстное меню шага](/ru/blog/new-in-devtools-109/#recorder)
+* [Показ настоящих названий функций в записях производительности](/ru/blog/new-in-devtools-109/#performance)
+* [Новые горячие клавиши во вкладках Консоль (Console) и Источники (Sources)](/ru/blog/new-in-devtools-109/#keyboard-shortcuts)
+* [Улучшенная отладка JavaScript](/ru/blog/new-in-devtools-109/#debugging)
+* [Другие важные моменты](/ru/blog/new-in-devtools-109/#misc)
+* [[Эксперимент] Улучшенный UX в интерфейсе управления точками останова](/ru/blog/new-in-devtools-109/#breakpoint-redesign)
+* [[Эксперимент] Автоматическое красивое форматирование внутри файла](/ru/blog/new-in-devtools-109/#pretty-print)
+
+
+### Chrome 108 {: #chrome108 }
+
+* [Подсказки для неактивных CSS-свойств](/ru/blog/new-in-devtools-108/#css-hint)
+* [Автоматическое определение XPath и текстовых селекторов во вкладке Recorder](/ru/blog/new-in-devtools-108/#recorder)
+* [Пошаговое выполнение выражений, разделенных запятыми](/ru/blog/new-in-devtools-108/#debugging)
+* [Улучшенные настройки Списка игнорируемых фреймворков](/ru/blog/new-in-devtools-108/#ignore-list)
+* [Другие важные моменты](/ru/blog/new-in-devtools-108/#misc)
+
+
+### Chrome 107 {: #chrome107 }
+
+* [Кастомизация сочетаний клавиш в DevTools](/ru/blog/new-in-devtools-107/#shortcuts)
+* [Переключение между светлой и тёмной темами по сочетанию клавиш](/ru/blog/new-in-devtools-107/#toggle-themes)
+* [Подсветка объектов C/C++ в Инспекторе памяти (Memory Inspector)](/ru/blog/new-in-devtools-107/#memory)
+* [Поддержка полной информации об инициаторе для импорта HAR](/ru/blog/new-in-devtools-107/#har)
+* [Начало поиска по DOM по нажатию по <kbd>Enter</kbd>](/ru/blog/new-in-devtools-107/#search-type)
+* [Отображение иконок `start` и `end` для свойства флексбокса `align-content`](/ru/blog/new-in-devtools-107/#flexbox)
+* [Другие важные моменты](/ru/blog/new-in-devtools-107/#misc)
+
+
+### Chrome 106 {: #chrome106 }
+
+* [Группировка по авторским и развёрнутым файлам во вкладке Источники (Sources)](/ru/blog/new-in-devtools-106/#authored)
+* [Связанные трассировки стека для асинхронных операций](/ru/blog/new-in-devtools-106/#async)
+* [Автоматическое игнорирование известных сторонних скриптов](/ru/blog/new-in-devtools-106/#auto-ignore)
+* [Улучшен стек вызовов во время отладки](/ru/blog/new-in-devtools-106/#call-stack)
+* [Скрытие источников из списка игнорируемых во вкладке Источники (Sources)](/ru/blog/new-in-devtools-106/#ignore-nav)
+* [Скрытие игнорируемых файлов из Меню Команд (Command Menu)](/ru/blog/new-in-devtools-106/#ignore-search)
+* [Новый трек Взаимодействия (Interactions) во вкладке Производительность (Performance)](/ru/blog/new-in-devtools-106/#performance)
+* [Разбивка по времени LCP во вкладке Performance Insights](/ru/blog/new-in-devtools-106/#insights)
+* [Автоматическая генерация стандартного имени для записи во вкладке Recorder](/ru/blog/new-in-devtools-106/#recorder)
+* [Другие важные моменты](/ru/blog/new-in-devtools-106/#misc)
 
 
 ### Chrome 105 {: #chrome105 }
@@ -67,7 +120,7 @@
 * [Определение блокирующего фрейма на панели Возвратного кэша (Back/forward cache)](/ru/blog/new-in-devtools-104/#bfcache)
 * [Улучшены подсказки автодополнения для объектов JavaScript](/ru/blog/new-in-devtools-104/#autocomplete)
 * [Улучшение карт источников](/ru/blog/new-in-devtools-104/#sourcemaps)
-* [Другие важные моменты](/ru/blog/new-in-devtools-104/#misc) -->
+* [Другие важные моменты](/ru/blog/new-in-devtools-104/#misc)
 
 ### Chrome 103 {: #chrome103 }
 

@@ -29,7 +29,7 @@ including Edge Legacy and Internet Explorer.
 
 ## How the Lighthouse cross-origin destination audit fails
 
-[Lighthouse](https://developers.google.com/web/tools/lighthouse/) flags unsafe links to cross-origin destinations:
+[Lighthouse](/docs/lighthouse/overview/) flags unsafe links to cross-origin destinations:
 
 <figure>
   {% Img src="image/tcFciHGuF3MxnTr1y5ue01OGLBn2/ztiQKS8eOfdzONC7bocp.png", alt="Lighthouse audit showing unsafe links to cross-origin destinations", width="800", height="213" %}
@@ -70,11 +70,11 @@ but also prevents the `Referer` header
 from being sent to the new page.
 See [Link type "noreferrer"](https://html.spec.whatwg.org/multipage/links.html#link-type-noreferrer).
 
-See the [Share cross-origin resources safely](https://web.dev/cross-origin-resource-sharing/)
+See the [Share cross-origin resources safely](https://web.dev/articles/cross-origin-resource-sharing)
 post for more information.
 
 ## Resources
 
 - [Source code for **Links to cross-origin destinations are unsafe** audit](https://github.com/GoogleChrome/lighthouse/blob/master/lighthouse-core/audits/dobetterweb/external-anchors-use-rel-noopener.js)
-- [Share cross-origin resources safely](https://web.dev/cross-origin-resource-sharing/)
-- [Site isolation for web developers](https://developers.google.com/web/updates/2018/07/site-isolation)
+- [Share cross-origin resources safely](https://web.dev/articles/cross-origin-resource-sharing)
+- [Site isolation for web developers](/blog/site-isolation/)

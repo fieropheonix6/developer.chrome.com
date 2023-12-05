@@ -24,7 +24,7 @@ can help you examine a page's accessibility.
 See [Navigating Chrome DevTools With Assistive Technology][2] if you're looking for help on
 navigating DevTools with an assistive technology like a screen reader.
 
-See [Learn Accessibility](https://web.dev/learn/accessibility/) if you'd like to learn how to develop accessible websites.
+See [Learn Accessibility](https://web.dev/learn/accessibility) if you'd like to learn how to develop accessible websites.
 
 ## Overview of accessibility features in Chrome DevTools {: #overview }
 
@@ -158,6 +158,19 @@ View an element's ARIA attributes in [the Accessibility pane][9].
 
 {% Img src="image/admin/5gOS8Kz2Qdxu3FbaKZ6W.png", alt="The ARIA Attributes section", width="800", height="506" %}
 
+### View the source order of elements on screen {: #source-order }
+
+The elements on the page don't always appear in the order they are in the source. This might confuse users who depend on assistive technology to navigate the web.
+
+To view and debug the source order on your website:
+
+1. [Inspect an element](/docs/devtools/open/#inspect) on the page.
+1. In **Elements** > **Accessibility** > **Source Order Viewer**, check {% Img src="image/NJdAV9UgKuN8AhoaPBquL7giZQo1/hmp8j3HiLMCcqPArD9yt.svg", alt="Checkbox.", width="24", height="24" %} **Show source order**.
+
+In the viewport, DevTools outlines nested elements with borders and marks them with numbers corresponding to their source order.
+
+{% Img src="image/NJdAV9UgKuN8AhoaPBquL7giZQo1/sBXqLvOkou3OTfwPzR36.png", alt="Source order option checked.", width="800", height="623" %}
+
 ### View an element's computed accessibility properties {: #computed }
 
 {% Aside %}
@@ -177,13 +190,13 @@ View an element's computed accessibility properties in [the Accessibility pane][
 
 DevTools can automatically find low-contrast issues and suggest better colors to help you fix them. See [Make your website more readable](/docs/devtools/accessibility/contrast/) to learn more.
 
-[1]: https://developers.google.com/web/fundamentals/accessibility
+[1]: https://web.dev/accessibility/
 [2]: /docs/devtools/accessibility/navigation
-[3]: https://developers.google.com/web/fundamentals/accessibility/semantics-builtin#screen_readers
-[4]: https://developers.google.com/web/fundamentals/accessibility/how-to-review
+[3]: https://web.dev/semantics-builtin/#screen-readers
+[4]: https://web.dev/how-to-review/
 [5]: #contrast
 [6]: https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd
-[7]: https://developers.google.com/web/fundamentals/accessibility/semantics-builtin/the-accessibility-tree
+[7]: https://web.dev/the-accessibility-tree/
 [8]: #pane
 [9]: #pane
 [10]: /docs/devtools/css/reference#computed
@@ -191,4 +204,4 @@ DevTools can automatically find low-contrast issues and suggest better colors to
 [12]: https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum
 [13]: https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced
 [14]: https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk
-[15]: https://jec.fyi/demo/cds-quest-cvd
+[15]: https://jec.fish/demo/cds-quest-cvd

@@ -126,16 +126,16 @@ To save the changes you made in DevTools:
 
 Learn more:
 
-- [Learn Accessibility](https://web.dev/learn/accessibility/) in general
-- [Color and contrast](https://web.dev/learn/accessibility/color-contrast/) accessibility in particular
+- [Learn Accessibility](https://web.dev/learn/accessibility) in general
+- [Color and contrast](https://web.dev/learn/accessibility/color-contrast) accessibility in particular
 
-[1]: https://developers.google.com/web/fundamentals/accessibility
+[1]: https://web.dev/accessibility/
 [2]: /docs/devtools/accessibility/navigation
-[3]: https://developers.google.com/web/fundamentals/accessibility/semantics-builtin#screen_readers
-[4]: https://developers.google.com/web/fundamentals/accessibility/how-to-review
+[3]: https://web.dev/semantics-builtin/#screen-readers
+[4]: https://web.dev/how-to-review/
 [5]: #contrast
 [6]: https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd
-[7]: https://developers.google.com/web/fundamentals/accessibility/semantics-builtin/the-accessibility-tree
+[7]: https://web.dev/the-accessibility-tree/
 [8]: #pane
 [9]: #pane
 [10]: /docs/devtools/css/reference#computed
@@ -143,4 +143,4 @@ Learn more:
 [12]: https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum
 [13]: https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced
 [14]: https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk
-[15]: https://jec.fyi/demo/cds-quest-cvd
+[15]: https://jec.fish/demo/cds-quest-cvd

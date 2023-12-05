@@ -8,12 +8,12 @@ date: 2019-05-02
 updated: 2020-04-29
 ---
 
-[Critical request chains](https://developers.google.com/web/fundamentals/performance/critical-rendering-path)
+[Critical request chains](https://web.dev/articles/critical-rendering-path)
 are series of dependent network requests important for page rendering.
 The greater the length of the chains and the larger the download sizes,
 the more significant the impact on page load performance.
 
-[Lighthouse](https://developers.google.com/web/tools/lighthouse/)
+[Lighthouse](/docs/lighthouse/overview/)
 reports critical requests loaded with a high priority:
 
 <figure>
@@ -41,10 +41,10 @@ Use the critical request chains audit results to target the resources that have 
 - Optimize the order in which the remaining critical resources are loaded: download all critical assets as early as possible to shorten the critical path length.
 
 Learn more about optimizing your
-[images](https://web.dev/use-imagemin-to-compress-images/),
-[JavaScript](https://web.dev/apply-instant-loading-with-prpl/),
-[CSS](https://web.dev/defer-non-critical-css/), and
-[web fonts](https://web.dev/avoid-invisible-text/).
+[images](https://web.dev/articles/use-imagemin-to-compress-images),
+[JavaScript](https://web.dev/articles/apply-instant-loading-with-prpl),
+[CSS](https://web.dev/articles/defer-non-critical-css), and
+[web fonts](https://web.dev/articles/avoid-invisible-text).
 
 ## Stack-specific guidance
 
@@ -54,4 +54,4 @@ If you are not bundling your JavaScript assets, consider using [baler](https://g
 
 ## Resources
 
-[Source code for **Minimize critical request depth** audit](https://github.com/GoogleChrome/lighthouse/blob/master/lighthouse-core/audits/critical-request-chains.js)
+[Source code for **Minimize critical request depth** audit](https://github.com/GoogleChrome/lighthouse/blob/main/core/audits/critical-request-chains.js)

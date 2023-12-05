@@ -13,4 +13,22 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
+import './web-components/enhanced-select';
 import './web-components/checkbox-group';
+import {TagPillList} from './web-components/tag-pill-list';
+
+const tagPillComponent = document.querySelector('#tag-pill-demo tag-pill-list');
+const tagPillButton = document.querySelector('#tag-pill-demo button');
+
+tagPillButton?.addEventListener('click', () => {
+  if (!(tagPillComponent instanceof TagPillList)) return;
+
+  tagPillComponent.items = [
+    ...tagPillComponent.items,
+    {
+      key: 'addition',
+      value: 'Addition',
+    },
+  ];
+});

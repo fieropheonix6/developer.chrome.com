@@ -86,7 +86,7 @@ Depending on which browser and OS combination a visitor uses, one of the behavio
 
 ## Mapping the various resize behaviors
 
-In the [Viewport Investigation Effort](https://github.com/web-platform-tests/interop-2022-viewport)-part of [Interop 2022](https://web.dev/interop-2022/)-various viewport-related aspects were investigated, for every major browser and OS combination.
+In the [Viewport Investigation Effort](https://github.com/web-platform-tests/interop-2022-viewport)-part of [Interop 2022](https://web.dev/blog/interop-2022)-various viewport-related aspects were investigated, for every major browser and OS combination.
 
 One of the tested aspects is the resize behavior when the OSK is shown. This led to the following classification:
 
@@ -124,13 +124,13 @@ This difference in how the various viewports get resized when the OSK is shown l
 
 In the browsers from [group 1](#group-one), with the OSK shown:
 
-  - The computed values for [viewport-relative units](https://web.dev/learn/css/sizing/#viewport-relative-units) remain the same.
+  - The computed values for [viewport-relative units](https://web.dev/learn/css/sizing#viewport_relative_units) remain the same.
   - Elements that were designed to take up the full visual space keep their size.
   - Elements that use `position: fixed` remain in place and can be obscured by the OSK.
 
 In the browsers from [group 2](#group-two), with the OSK shown:
 
-  - The computed values for [viewport-relative units](https://web.dev/learn/css/sizing/#viewport-relative-units) shrink.
+  - The computed values for [viewport-relative units](https://web.dev/learn/css/sizing#viewport_relative_units) shrink.
   - Elements that were designed to take up the full visual space shrink.
   - Elements that use `position: fixed` can end up elsewhere in the layout.
 
@@ -151,21 +151,29 @@ This will align the behavior of Chrome on Android with that of Chrome on iOS, iP
 
 Thanks to this change, authors can know which behavior will be used, no matter which OS Chrome is running on. Furthermore it allows for stable viewport-relative units: showing or hiding the OSK does not affect these units.
 
+{% Aside %}
+These changes do not affect [WebView](/docs/multidevice/webview/)
+{% endAside %}
+
 ## Opting in to a different behavior
 
-If you want your website to use the pre-108 resize behavior, fear not. Also shipping in Chrome 108 is an extension to the [viewport meta tag](https://web.dev/viewport/).
+If you want your website to use the pre-108 resize behavior, fear not. Also shipping in Chrome 108 is an extension to the [viewport meta tag](https://web.dev/articles/viewport).
 
 Through [the `interactive-widget` key](https://drafts.csswg.org/css-viewport/#interactive-widget-section), you can tell Chrome which resize behavior you want.
-
-```html
-<meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=overlays-content">
-```
 
 Accepted values for `interactive-widget` are:
 
 - `resizes-visual`: Resize only the Visual Viewport but not the Layout Viewport.
 - `resizes-content`: Resize both the Visual Viewport and Layout Viewport.
 - `overlays-content`: Do not resize any viewport.
+
+To opt back in to the “old” Chrome on Android behavior, set the viewport meta tag to this:
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content">
+```
+
+If you don’t include `interactive-widget` in the viewport meta tag, Chrome will use the default behavior, which is `resizes-visual`.
 
 Visualized, the settings have this effect on the various viewports:
 
@@ -186,7 +194,7 @@ Note that this meta tag extension is only supported by Chrome 108 and up at the 
 
 We expect some minor differences to existing sites, but expect these to be non-blocking as Chrome 108 on Android will now behave similarly to Safari on iOS. Therefore, websites that work fine on Safari on iOS should also work fine on Chrome 108 on Android.
 
-However, we do encourage website authors to actively test their websites in Chrome 108, which is in beta from October 27th 2022. Specifically look out for elements that use `position: fixed` and/or rely on [Viewport-relative units](https://web.dev/learn/css/sizing/#viewport-relative-units).
+However, we do encourage website authors to actively test their websites in Chrome 108, which is in beta from October 27th 2022. Specifically look out for elements that use `position: fixed` and/or rely on [Viewport-relative units](https://web.dev/learn/css/sizing#viewport_relative_units).
 
 Feedback can be reported over at [crbug.com](https://crbug.com/). Be sure to include “on-screen keyboard” in the report’s title.
 

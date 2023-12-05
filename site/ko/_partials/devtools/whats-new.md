@@ -2,16 +2,53 @@
 
 <a href="/tags/new-in-devtools/" translate="no">What's New In DevTools</a> 영어 버전을 참고하여 관련 기능의 전체 목록을 볼 수 있습니다. 아래 콘텐츠들은 한국어로 번역된 콘텐츠들입니다.
 
-<!-- $content -->
+{# $content #}
 
-<!-- ### Chrome 108 {: #chrome108 }
+{# ### Chrome 111 {: #chrome111 }
 
-* [Hints for inactive CSS properties](/ko/blog/new-in-devtools-108/#css-hint)
-* [Auto-detect XPath and text selectors in the Recorder panel](/ko/blog/new-in-devtools-108/#recorder)
-* [Step through comma-separated expressions](/ko/blog/new-in-devtools-108/#debugging)
-* [Improved Ignore list setting](/ko/blog/new-in-devtools-108/#ignore-list)
-* [Miscellaneous highlights](/ko/blog/new-in-devtools-108/#misc)
- -->
+* [Debugging HD color with the Styles pane](/ko/blog/new-in-devtools-111/#color)
+* [Enhanced breakpoint UX](/ko/blog/new-in-devtools-111/#breakpoint-redesign)
+* [Customizable Recorder shortcuts](/ko/blog/new-in-devtools-111/#recorder)
+* [Better syntax highlight for Angular](/ko/blog/new-in-devtools-111/#syntax)
+* [Reorganize caches in the Application panel](/ko/blog/new-in-devtools-111/#cache)
+* [Miscellaneous highlights](/ko/blog/new-in-devtools-111/#misc)
+ #}
+
+
+{# ### Chrome 110 {: #chrome110 }
+
+* [Clearing Performance Panel on reload](/ko/blog/new-in-devtools-110/#perf)
+* [Recorder updates](/ko/blog/new-in-devtools-110/#recorder)
+* [View and highlight the code of your user flow in the Recorder](/ko/blog/new-in-devtools-110/#recorder-code)
+* [Customize selector types of a recording](/ko/blog/new-in-devtools-110/#recorder-selector)
+* [Edit user flow while recording](/ko/blog/new-in-devtools-110/#recorder-edit)
+* [Automatic in-place pretty print](/ko/blog/new-in-devtools-110/#pretty-print)
+* [Better syntax highlight and inline preview for Vue, SCSS and more](/ko/blog/new-in-devtools-110/#highlight)
+* [Ergonomic and consistent Autocomplete in the Console](/ko/blog/new-in-devtools-110/#console)
+* [Miscellaneous highlights](/ko/blog/new-in-devtools-110/#misc)
+ #}
+
+
+{# ### Chrome 109 {: #chrome109 }
+
+* [Recorder: Copy as options for steps, in-page replay, step’s context menu](/ko/blog/new-in-devtools-109/#recorder)
+* [Show actual function names in performance’s recordings](/ko/blog/new-in-devtools-109/#performance)
+* [New keyboard shortcuts in the Console & Sources panel](/ko/blog/new-in-devtools-109/#keyboard-shortcuts)
+* [Improved JavaScript debugging](/ko/blog/new-in-devtools-109/#debugging)
+* [Miscellaneous highlights](/ko/blog/new-in-devtools-109/#misc)
+* [[Experimental] Enhanced UX in managing breakpoints](/ko/blog/new-in-devtools-109/#breakpoint-redesign)
+* [[Experimental] Automatic in-place pretty print](/ko/blog/new-in-devtools-109/#pretty-print)
+ #}
+
+
+### Chrome 108 {: #chrome108 }
+
+* [비활성화된 CSS 프로퍼티에 대한 힌트](/ko/blog/new-in-devtools-108/#css-hint)
+* [Recoder 패널에서의 XPath 와 텍스트 셀렉터의 자동 인식](/ko/blog/new-in-devtools-108/#recorder)
+* [쉼표로 구분된 표현식을 통한 진행](/ko/blog/new-in-devtools-108/#debugging)
+* [개선된 무시 목록 설정](/ko/blog/new-in-devtools-108/#ignore-list)
+* [기타 하이라이트](/ko/blog/new-in-devtools-108/#misc)
+
 
 ### Chrome 107 {: #chrome107 }
 

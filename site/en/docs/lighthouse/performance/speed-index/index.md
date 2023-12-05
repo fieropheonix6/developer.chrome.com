@@ -7,7 +7,7 @@ date: 2019-05-02
 updated: 2021-06-04
 ---
 
-Speed Index is one of six metrics
+Speed Index is one of five metrics
 tracked in the **Performance** section of the Lighthouse report.
 Each metric captures some aspect of page load speed.
 
@@ -80,7 +80,7 @@ should have a particularly big impact:
 
 ## Resources
 
-- [Source code for **Speed Index** audit](https://github.com/GoogleChrome/lighthouse/blob/master/lighthouse-core/audits/metrics/speed-index.js)
+- [Source code for **Speed Index** audit](https://github.com/GoogleChrome/lighthouse/blob/main/core/audits/metrics/speed-index.js)
 - [Lighthouse Scoring Guide](/docs/lighthouse/performance/performance-scoring/)
 - [Speedline](https://github.com/paulirish/speedline)
 - [WebPagetest Speed Index](https://github.com/WPO-Foundation/webpagetest-docs/blob/main/src/metrics/SpeedIndex.md)
